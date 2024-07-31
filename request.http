@@ -9,6 +9,14 @@ Content-Type: application/json
 ###
 
 POST http://localhost:3000/auth/signin
-{
+Content-Type: application/json
 
+{
+    "email":"test@gmail.com",
+    "password":"test password"
 }
+
+###
+
+GET http://localhost:3000/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoidGVzdEBnbWFpbC5jb20iLCJpYXQiOjE3MjI0NjI4MDUsImV4cCI6MTcyMjQ2MzcwNX0.88OZfycdJrAYOaAYoBF7phe5bp-gKE8IWeW148rEhaI
